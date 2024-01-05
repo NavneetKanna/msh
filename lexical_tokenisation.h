@@ -1,6 +1,6 @@
 #ifndef PARSE_COMMAND
 #define PARSE_COMMAND
 
-void lexical_tokenization(char *);
+void lexical_tokenisation(char *);
 
 #endif 
