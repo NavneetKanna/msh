@@ -3,6 +3,9 @@
 
 #define BUFFER_SIZE 100
 
+/*
+Read the command and store as a string
+*/
 char *read_command() 
 {
     char *inp_buf = (char *) malloc(sizeof(char) * BUFFER_SIZE);
