@@ -3,7 +3,7 @@
 
 #define BUFFER_SIZE 100
 
-void read_inp() 
+void read_command() 
 {
     char *inp_buf = (char *) malloc(sizeof(char) * BUFFER_SIZE);
 

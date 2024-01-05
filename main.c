@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "read_inp.h"
+#include "read_command.h"
 
 void msh_loop() 
 {
@@ -7,7 +7,7 @@ void msh_loop()
 
     while (status) {
         printf("> ");
-        read_inp();        
+        read_command();        
     }
 }
 
