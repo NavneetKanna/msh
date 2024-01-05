@@ -4,10 +4,13 @@
 void msh_loop() 
 {
     int status = 1;
+    char *command;
 
     while (status) {
         printf("> ");
-        read_command();        
+        command = read_command();    
+
+        free(command);    
     }
 }
 

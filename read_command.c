@@ -3,7 +3,7 @@
 
 #define BUFFER_SIZE 100
 
-void read_command() 
+char *read_command() 
 {
     char *inp_buf = (char *) malloc(sizeof(char) * BUFFER_SIZE);
 
@@ -12,7 +12,5 @@ void read_command()
         exit(EXIT_FAILURE);
     }
 
-    fputs(inp_buf, stdout);
-
-    free(inp_buf);
+    return inp_buf;
 }

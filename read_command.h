@@ -1,6 +1,6 @@
 #ifndef READ_INP
 #define READ_INP
 
-void read_command();
+char *read_command();
 
 #endif
