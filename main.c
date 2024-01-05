@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "read_inp.h"
 
-void msh_loop() {
+void msh_loop() 
+{
     int status = 1;
 
     while (status) {
@@ -10,7 +11,8 @@ void msh_loop() {
     }
 }
 
-int main() {
+int main() 
+{
     msh_loop();
     return 0;
 }

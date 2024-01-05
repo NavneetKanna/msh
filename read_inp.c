@@ -3,7 +3,8 @@
 
 #define BUFFER_SIZE 100
 
-void read_inp() {
+void read_inp() 
+{
     char *inp_buf = (char *) malloc(sizeof(char) * BUFFER_SIZE);
 
     if (fgets(inp_buf, BUFFER_SIZE, stdin) == NULL) {
@@ -11,10 +12,7 @@ void read_inp() {
         exit(EXIT_FAILURE);
     }
 
-    // fputs does not add \0
     fputs(inp_buf, stdout);
 
     free(inp_buf);
-
-
 }
