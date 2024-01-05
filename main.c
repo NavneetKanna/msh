@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "read_command.h"
+#include "lexical_tokenization.h"
 
 void msh_loop() 
 {
@@ -8,7 +9,8 @@ void msh_loop()
 
     while (status) {
         printf("> ");
-        command = read_command();    
+        command = read_command();
+        lexical_tokenization(command);    
 
         free(command);    
     }
