@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "read_command.h"
-#include "lexical_tokenization.h"
+#include "lexical_tokenisation.h"
 
 void msh_loop() 
 {
