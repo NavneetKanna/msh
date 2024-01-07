@@ -15,7 +15,7 @@ char *read_command()
         exit(EXIT_FAILURE);
     }
 
-    // fegts() add null char at end
+    // fegts() adds null char at end
     if (fgets(inp_buf, BUFFER_SIZE, stdin) == NULL) {
         printf("Failure to read input");
         exit(EXIT_FAILURE);

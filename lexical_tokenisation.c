@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "lexical_tokenisation.h"
 
 /*
@@ -10,12 +11,9 @@ void lexical_tokenisation(char *command) {
     char *token;
     char *next_token;
 
-    // printf("%s ", command);
-
     token = strtok_r(command, delim, &next_token);
 
     while (token != NULL) {
-        printf("%s ", token);
         token = strtok_r(NULL, delim, &next_token);
     }
 }

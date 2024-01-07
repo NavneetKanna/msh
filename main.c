@@ -11,7 +11,6 @@ void msh_loop()
     while (status) {
         printf("> ");
         command = read_command();
-        
         lexical_tokenisation(command);    
 
         free(command);    
