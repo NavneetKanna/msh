@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "lexical_tokenisation.h"
+#include "lexeme.h"
 
 /*
 Take the string, and break it down into tokens
 */
-void lexical_tokenisation(char *command) {
+void lexeme(char *command) {
     char *delim = " ";
     char *token;
     char *next_token;

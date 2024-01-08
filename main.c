@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "read_command.h"
-#include "lexical_tokenisation.h"
+#include "lexeme.h"
 
 void msh_loop() 
 {
@@ -11,7 +11,7 @@ void msh_loop()
     while (status) {
         printf("> ");
         command = read_command();
-        lexical_tokenisation(command);    
+        lexeme(command);    
 
         free(command);    
 
