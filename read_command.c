@@ -7,7 +7,7 @@ Read the command and store as a string
 */
 read_command() 
 {
-    int command[BUFFER_SIZE];
+    int command[BUFFER_SIZE] = {0};
     int i = 0;
 
     for (int ch; (ch = getchar()) != EOF && ch != '\n'; ) {
