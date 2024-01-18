@@ -2,9 +2,7 @@
 #include <stdlib.h>
 #include "constant.h"
 
-/*
-Read the command and store as a string
-*/
+
 read_command() 
 {
     int command[BUFFER_SIZE] = {0};
