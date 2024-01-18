@@ -5,20 +5,19 @@
 /*
 Read the command and store as a string
 */
-char *read_command() 
+read_command() 
 {
-    char *inp_buf = (char *) malloc(BUFFER_SIZE * sizeof(char));
+    int command[BUFFER_SIZE];
+    int i = 0;
 
-    if (inp_buf == NULL) {
-        printf("Error in allocating memory");
-        exit(EXIT_FAILURE);
+    for (int ch; (ch = getchar()) != EOF && ch != '\n'; ) {
+        if (ch != (int) ' ') {
+            command[i++] = ch;
+        } else {
+            command[i++] = ch;
+        }
     }
 
-    // fegts() adds null char at end
-    if (fgets(inp_buf, BUFFER_SIZE, stdin) == NULL) {
-        printf("Failure to read input");
-        exit(EXIT_FAILURE);
-    }
+    
 
-    return inp_buf;
 }
