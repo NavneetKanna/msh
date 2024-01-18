@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-#define BUFFER_SIZE 100
+#include "constant.h"
 
 /*
 Read the command and store as a string
