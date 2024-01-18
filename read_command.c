@@ -3,7 +3,7 @@
 #include "constant.h"
 #include "len_of_command.h"
 
-read_command() 
+void read_command() 
 {
     int command[BUFFER_SIZE] = {0};
     int i = 0, j = 0, start = 0, end = 0;
