@@ -13,7 +13,6 @@ void read_command()
 {
     int command[BUFFER_SIZE] = {0};
     int i = 0, j = 0, start = 0, end = 0;
-    length_of_command len_arr[BUFFER_SIZE / 2];
     
     for (int ch; (ch = getchar()) != EOF && ch != '\n'; ) {
         if (ch != (int) ' ') {
