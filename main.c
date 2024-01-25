@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "read_command/read_command.h"
+#include "common/init_commands.h"
 
 void msh_loop() 
 {
@@ -17,6 +18,7 @@ void msh_loop()
 
 int main() 
 {
+    init_commands();
     msh_loop();
     return 0;
 }
