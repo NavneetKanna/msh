@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../constant.h"
-#include "../len_of_command.h"
+#include "../common/constant.h"
+#include "../common/len_of_command.h"
 
 /*
 command[] is used to store the ascii values of the individual chars.
