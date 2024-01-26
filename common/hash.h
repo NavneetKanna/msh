@@ -1,6 +1,6 @@
 #ifndef HASH 
 #define HASH
 
-void hash(); 
+int hash(int key); 
 
 #endif

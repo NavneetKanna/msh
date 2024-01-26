@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "hash.h"
 
-void hash() {
+int hash(int key) {
+
 
 } 
