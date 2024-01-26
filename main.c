@@ -10,8 +10,9 @@ void msh_loop()
 
     while (status) {
         printf("> ");
-        read_command();
+        int *cmd = read_command();
 
+        free(cmd);
         status = 0;
     }
 }

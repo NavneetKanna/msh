@@ -3,6 +3,4 @@
 
 void hash(); 
 
-
-
 #endif
