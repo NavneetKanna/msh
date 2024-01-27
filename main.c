@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "read_command/read_command.h"
-#include "common/init_commands.h"
+#include "parse_command/parse_command.h"
 
 void msh_loop() 
 {
@@ -11,6 +11,7 @@ void msh_loop()
     while (status) {
         printf("> ");
         int *cmd = read_command();
+
 
         free(cmd);
         status = 0;
