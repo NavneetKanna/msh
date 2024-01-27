@@ -4,10 +4,12 @@
 #include "../common/len_of_command.h"
 #include "read_command.h"
 
+length_of_command len_arr[BUFFER_SIZE / 2];
+
 /*
-command[] is used to store the ascii values of the individual chars.
-len_arr is a struct used to store the beginning and end index values of the words.
-*/
+ * command is used to store the ascii values of the individual chars.
+ * len_arr is a struct used to store the beginning and end index values of the words.
+ */
 int *read_command() 
 {
     int i = 0, j = 0, start = 0, end = 0;
@@ -32,6 +34,8 @@ int *read_command()
         }
     }
     
+    command[i] = (int) '\n';
+
     len_arr[j].start = start;
     len_arr[j].end = end - 1;
 

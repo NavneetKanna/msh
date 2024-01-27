@@ -11,6 +11,7 @@ void msh_loop()
     while (status) {
         printf("> ");
         int *cmd = read_command();
+        parse_command(cmd);
 
 
         free(cmd);
@@ -20,7 +21,6 @@ void msh_loop()
 
 int main() 
 {
-    init_commands();
     msh_loop();
     return 0;
 }
